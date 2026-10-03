@@ -1,0 +1,164 @@
+[versions]
+
+# ==========================================
+# Build Tools
+# ==========================================
+agp = "9.3.1"
+kotlin = "2.2.10"
+
+# ==========================================
+# AndroidX
+# ==========================================
+coreKtx = "1.18.0"
+appcompat = "1.7.1"
+activity = "1.13.0"
+fragment = "1.8.9"
+constraintlayout = "2.2.1"
+lifecycle = "2.9.2"
+navigation = "2.9.3"
+recyclerview = "1.4.0"
+swiperefresh = "1.1.0"
+splashscreen = "1.0.1"
+
+# ==========================================
+# Material
+# ==========================================
+material = "1.14.0"
+
+# ==========================================
+# Networking
+# ==========================================
+retrofit = "2.11.0"
+okhttp = "4.12.0"
+gson = "2.10.1"
+
+# ==========================================
+# Coroutines
+# ==========================================
+coroutines = "1.10.2"
+
+# ==========================================
+# JWT
+# ==========================================
+jwt = "2.0.2"
+
+# ==========================================
+# CameraX
+# ==========================================
+camera = "1.4.2"
+
+# ==========================================
+# ML Kit
+# ==========================================
+mlkit = "17.3.0"
+
+# ==========================================
+# Testing
+# ==========================================
+junit = "4.13.2"
+androidxJunit = "1.3.0"
+espresso = "3.7.0"
+
+[libraries]
+
+# ==========================================
+# AndroidX
+# ==========================================
+
+androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "coreKtx" }
+
+androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
+
+androidx-activity-ktx = { module = "androidx.activity:activity-ktx", version.ref = "activity" }
+
+androidx-fragment-ktx = { module = "androidx.fragment:fragment-ktx", version.ref = "fragment" }
+
+androidx-constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayout" }
+
+androidx-lifecycle-runtime = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle" }
+
+androidx-lifecycle-viewmodel = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
+
+androidx-lifecycle-livedata = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version.ref = "lifecycle" }
+
+androidx-navigation-fragment = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "navigation" }
+
+androidx-navigation-ui = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigation" }
+
+androidx-recyclerview = { module = "androidx.recyclerview:recyclerview", version.ref = "recyclerview" }
+
+androidx-swiperefreshlayout = { module = "androidx.swiperefreshlayout:swiperefreshlayout", version.ref = "swiperefresh" }
+
+androidx-splashscreen = { module = "androidx.core:core-splashscreen", version.ref = "splashscreen" }
+
+# ==========================================
+# Material
+# ==========================================
+
+material = { module = "com.google.android.material:material", version.ref = "material" }
+
+# ==========================================
+# Networking
+# ==========================================
+
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+
+retrofit-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+
+okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }
+
+logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "okhttp" }
+
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+
+# ==========================================
+# Coroutines
+# ==========================================
+
+coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
+
+coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
+
+# ==========================================
+# JWT
+# ==========================================
+
+jwt = { module = "com.auth0.android:jwtdecode", version.ref = "jwt" }
+
+# ==========================================
+# CameraX
+# ==========================================
+
+camera-core = { module = "androidx.camera:camera-core", version.ref = "camera" }
+
+camera-camera2 = { module = "androidx.camera:camera-camera2", version.ref = "camera" }
+
+camera-lifecycle = { module = "androidx.camera:camera-lifecycle", version.ref = "camera" }
+
+camera-view = { module = "androidx.camera:camera-view", version.ref = "camera" }
+
+# ==========================================
+# ML Kit
+# ==========================================
+
+barcode-scanning = { module = "com.google.mlkit:barcode-scanning", version.ref = "mlkit" }
+
+# ==========================================
+# Testing
+# ==========================================
+
+junit = { module = "junit:junit", version.ref = "junit" }
+
+androidx-junit = { module = "androidx.test.ext:junit", version.ref = "androidxJunit" }
+
+androidx-espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "espresso" }
+
+[plugins]
+
+android-application = { id = "com.android.application", version.ref = "agp" }
+
+android-library = { id = "com.android.library", version.ref = "agp" }
+
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
