@@ -2,22 +2,17 @@ package com.bartech.api_usage_boilerplate
 
 import android.app.Dialog
 import android.content.Intent
-import android.graphics.Color
 import android.os.Bundle
-import android.view.Gravity
 import android.view.ViewGroup
 import android.view.WindowManager
-import android.widget.FrameLayout
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
 import androidx.core.view.GravityCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.bartech.api_usage_boilerplate.databinding.ActivityMainMenuBinding
 import com.bartech.api_usage_boilerplate.databinding.DialogLogoutBinding
 import com.bartech.api_usage_boilerplate.databinding.LoadingDialogBinding
-import com.google.android.material.snackbar.Snackbar
 
 class MainMenuActivity : AppCompatActivity() {
 
