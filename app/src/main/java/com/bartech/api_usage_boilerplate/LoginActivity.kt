@@ -201,6 +201,10 @@ class LoginActivity : AppCompatActivity() {
 
         if (message != null) {
             showResult(message, success)
+
+            // Consume the snackbar message so it won't show again
+            intent.removeExtra("snackBar_message")
+            intent.removeExtra("snackBar_success")
         }
 
         binding.settingsBtn.setOnClickListener {
